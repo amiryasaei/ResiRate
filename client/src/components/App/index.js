@@ -1,8 +1,8 @@
 import React from 'react';
-import Review from './Review';
+import NavBar from '../NavBar';
 
 function App() {
-  return <Review />;
+  return <NavBar />;
 }
 
 export default App;
