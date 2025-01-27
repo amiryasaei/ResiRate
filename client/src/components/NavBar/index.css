@@ -1,16 +1,16 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 110%; 
+    height: 100%;
     font-size: 32px;
-    font: arial;
     text-align: center;
-    gap:0;
+    color: white;
+    text-decoration: none;
 }
 
 .logo {
@@ -41,11 +41,11 @@
     padding: 0;
 }
 
-.nav a {
+.nav li a {
     text-decoration: none;
     color: white;
 }
 
-.nav a:hover {
+.nav li a:hover {
     color: #12a1de;
 }

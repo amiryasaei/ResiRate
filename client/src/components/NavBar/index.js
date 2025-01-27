@@ -6,23 +6,19 @@ export default function NavBar() {
     return (
         <nav className="nav">
             <a href="/">
-                <div className="logo-container">
+                <div className="logo-container" href="/">
                     <img src={logo} alt="Logo" className="logo" />
                     ResiRate
                 </div>
             </a>
             <ul>
                 <li>
-                    <a
-                        href="/login"
-                    >
+                    <a href="/login">
                         Login
                     </a>
                 </li>
                 <li>
-                    <a
-                        href="/contact"
-                    >
+                    <a href="/contact">
                         Contact
                     </a>
                 </li>
