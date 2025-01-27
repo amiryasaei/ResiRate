@@ -1,6 +1,6 @@
 import React from "react";
-import "./style.css";
-import logo from "../../assets/logo.png";
+import "./index.css";
+import logo from "../../assets/img/logo.png";
 
 export default function NavBar() {
     return (
@@ -8,6 +8,7 @@ export default function NavBar() {
             <a href="/">
                 <div className="logo-container">
                     <img src={logo} alt="Logo" className="logo" />
+                    ResiRate
                 </div>
             </a>
             <ul>
