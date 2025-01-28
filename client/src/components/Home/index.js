@@ -1,6 +1,7 @@
 import * as React from 'react';
 import "./index.css";
 import callApiLoadUserSettings from './callApiLoadUserSettings.js';
+import SearchBar from '../SearchBar/index.js';
 const serverURL = "";
 
 
@@ -24,11 +25,16 @@ const Home = () => {
 
   return (
     <div className="content">
-      <div className="title">
-        <div className='shape circle'/>
-        <div className='shape rectanlge'/>
-        <div className='shape triangle'/>
-        ResiRate
+      <div className='titleContent'>
+        <div className="title">
+          <div className='shape circle'/>
+          <div className='shape rectangle'/>
+            Choose your next home wisely!
+          <div className="subtitle">
+            Real reviews by real students.
+          </div>
+        </div>
+        <SearchBar isNavbar={false}/>
       </div>
     </div>
   );

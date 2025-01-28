@@ -5,7 +5,7 @@ import Home from '../Home';
 function App() {
   return (
   <>
-      <NavBar />
+      <NavBar/>
       <Home />
   </>
   );
