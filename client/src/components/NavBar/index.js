@@ -3,7 +3,7 @@ import "./index.css";
 import logo from "../../assets/img/logo.png";
 import SearchBar from "../SearchBar";
 
-export default function NavBar(searchComponent) {
+export default function NavBar({isHome}) {
     return (
         <nav className="nav">
             <a href="/">
@@ -12,7 +12,20 @@ export default function NavBar(searchComponent) {
                     ResiRate
                 </div>
             </a>
-            {searchComponent ?
+            {isHome ?
+                <ul>
+                    <li>
+                        <a href="/login">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            :
                 <>
                 <SearchBar isNavbar={true}/>
                 <ul>
@@ -27,20 +40,7 @@ export default function NavBar(searchComponent) {
                         </a>
                     </li>
                 </ul>
-                </>
-            :
-                <ul>
-                    <li>
-                        <a href="/login">
-                            Login
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
+            </>
             }
         </nav>
     );

@@ -1,5 +1,5 @@
 .navSearch {
-    width: 50vh;
+    width: 50%;
     height: 48px;
     border-radius: 5px;
     background-color: white;
@@ -19,6 +19,7 @@
     color: rgb(46, 46, 46);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     font-size: 16px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);

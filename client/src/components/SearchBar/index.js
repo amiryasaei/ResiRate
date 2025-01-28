@@ -12,7 +12,8 @@ export default function SearchBar({isNavbar}) {
             </div>
         :
             <div className='titleSearch'>
-                This is the second search bar
+                Search for a residence or address ...
+                <img src={navSearchIcon}/>
             </div>
         }
         </>
